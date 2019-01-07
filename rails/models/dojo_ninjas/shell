@@ -1,0 +1,32 @@
+1. rails new <project>
+2. rails g model <name> singular and uppercase with attributes being strin, integer, etc.
+3. rake db:migrate
+4. import gem 'hirb'
+5. bundle install
+6. go into console
+7. Hirb.enable
+8. Create validates then check validates    
+    a. d = Dojo.new
+    b. d.valid?
+    c. d.errors.full_messages
+9. Dojo.create(blha:blah, blha:blah, blha:blah,)
+10. Have certain ninjas go to certain dojos
+    Ninja.creat(name:name, dojo:Dojo.find(5))
+10. d = Dojo.all
+     d.delete(d)
+    Dojo.find(4).destroy
+12. Create new Dojo by Dojo.new
+    d = Dojo.new
+    d.name = <name>
+    d.city = <city>
+    d.state = <state>
+    d.save
+13. Find the first ninja and see what dojo its          install 
+    Ninja.find(id_number).dojo OR Ninja.first
+14. Find all ninjas that are in Dojo 4
+    Dojo.find(4).ninjas   Notice it's ninjas and not something liek Ninja.all . Remember of the references
+15. How would you only retrieve the first_name of the ninjas that belong to the second dojo and order the result by created_at DESC order?
+    Dojo.find(5).ninjas.select("first_name").order(first_name: :desc) OR order("first_name DESC")
+
+
+NEVER FINISHED HOW TO DELETE THE DOJO WITH DEPENEDENETS

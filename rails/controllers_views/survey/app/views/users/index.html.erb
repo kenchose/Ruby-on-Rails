@@ -1,0 +1,26 @@
+<form action="/result" method="post">
+    <input type="hidden" name="authenticity_token" value = '<%= form_authenticity_token %>'>
+    <label for="name">Your Name:</label>
+    <input type="text" name='name'>
+    <p>
+        <label for="location">Dojo Location</label>
+        <select name="location">
+            <option value="Mountain Valley">Mountain Valley</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Seattle">Seattle</option>
+        </select>
+    </p>
+    <p>
+        <label for="language">Favorite Language</label>
+        <select name="language">
+            <option value="Python">Python</option>
+            <option value="ROR">ROR</option>
+            <option value="JS">JS</option>
+        </select>
+    </p>
+    <p>
+        <label for="comment">Comment(option)</label>
+    </p>
+    <textarea name="comment" cols="30" rows="10"></textarea>
+    <p><input type="submit" value="Submit"></p> 
+</form>

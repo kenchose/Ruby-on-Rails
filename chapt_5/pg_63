@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+3.
+appenVal(liss, val, after){
+    var runner = list.head;
+    var walker = listhead;
+    var newNodeVal = val;
+        while(runner) {
+            walker = runner;
+            runner = runner.next;
+            if (walkder.val = after) {
+                walker.next = newNode;
+                newNode.next = runner;
+                return list;
+            }
+        }
+    walker.next = newNode;
+    return list;
+}

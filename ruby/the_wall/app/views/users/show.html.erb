@@ -1,0 +1,5 @@
+<% if flash[:notice] %>
+    <% flash[:notice].each do |e| %>
+        <h3><p> <%= e %> </p></h3>
+    <% end %>
+<% end %>

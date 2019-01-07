@@ -1,0 +1,16 @@
+<h1>Submitted Information</h1>
+<h2>
+<% if flash[:notice] %>
+    <%= flash[:notice].join %>
+<% end %>
+</h2>
+<h2>
+    Name: <%= @user.name %>
+    <br>
+    Dojo Location: <%= @user.location %>
+    <br>
+    Favorite Language: <%= @user.language %>
+    <br>
+    Comment: <%= @user.comment %>
+    <h3><p><a href="/users">Go Back</a></p></h3>
+</h2>

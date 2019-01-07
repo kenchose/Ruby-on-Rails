@@ -1,0 +1,8 @@
+<h1>Editing <%= @users.name %></h1>
+
+<form action="users/1" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
+    <input type='hidden' name='_method' value='patch'>
+    Name: <input type="text" name="name" value= "<%= @users.name %>">
+    <input type="submit" value="Submit">
+</form>
